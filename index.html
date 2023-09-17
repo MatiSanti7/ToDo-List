@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Todo app</title>
+</head>
+<body>
+  <div class="container">
+    <div class="content">
+      <header>
+        <h1>TODO</h1>
+        <img src="/images/icon-sun.svg" alt="" class="mode" id="mode">
+      </header>
+      <main id="main">
+        <div class="newToDo">
+          <div class="circle equal" id="check"></div>
+          <input type="text" class="inputText" id="inputToDo" placeholder="Create a new todo...">
+        </div>
+        <div class="list" id="list">
+          <!--    Add Element    -->
+          <div class="btm" id="btm">
+            <p><span id="amount">0</span> items left</p>
+            <p id="clear">Clear Completed</p>
+          </div>
+        </div>
+        <div class="options" id="options">
+          <button class="option all selected">All</button>
+          <button class="option active">Active</button>
+          <button class="option completed">Completed</button>
+        </div>
+        <p class="drag" id="dragDrop">Drag and drop to reorder list</p>
+      </main>
+    </div>
+  </div>
+  <script src="/app.js"></script>
+</body>
+</html>
